@@ -1,0 +1,3031 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%D0%9C%D0%B5%D1%82%D0%BA%D0%B8/">
+      
+      
+        <link rel="next" href="../%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8/">
+      
+      
+      <link rel="icon" href="../img/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Функции - Руководство пользователя</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Руководство пользователя" class="md-header__button md-logo" aria-label="Руководство пользователя" data-md-component="logo">
+      
+  <img src="../img/logo2.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Руководство пользователя
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Функции
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Руководство пользователя" class="md-nav__button md-logo" aria-label="Руководство пользователя" data-md-component="logo">
+      
+  <img src="../img/logo2.png" alt="logo">
+
+    </a>
+    Руководство пользователя
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Термины
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Работа с шаблоном
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Работа с шаблоном
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Создание шаблона
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Загрузка образца документа
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Добавление полей
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D1%81%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Маска имени и пути сохранения документа
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Форматирование документа
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Горячие клавиши
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Предварительный просмотр.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Предварительный просмотр
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Поля
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Поля
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Свойства.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Свойства полей
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BA%D1%81%D1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Текст»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Целое.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Целое число»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Десятичное.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Десятичное число»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ДаНет.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Да/Нет»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Дата.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Дата»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Время.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Время»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ДатаВремя.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Дата/Время»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Перечисление.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Перечисление»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Составное.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Составное поле»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Объединение.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Объединение»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spisok/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Список»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Группировка.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Группировка полей
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Привязка.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Привязка полей к источникам данных
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Условия_видимости.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Условия видимости
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Метки и функции
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Метки и функции
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B5%D1%82%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Метки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Функции
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Функции
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дата и Время
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дата и Время">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      дата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      датамес
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      конмесяца
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      начмесяца
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      разндат
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      сегодня
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      смещдат
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      тдата
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Логические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Логические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      если
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Математические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Математические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      округлить
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exp" class="md-nav__link">
+    <span class="md-ellipsis">
+      exp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      ln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log10" class="md-nav__link">
+    <span class="md-ellipsis">
+      log10
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Морфологические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Морфологические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      инициалы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      окончание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      склонение
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      транслит
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматВолюты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматДаты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматЧисла
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      числоСТекстом
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      Работа со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Работа со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      макс
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      мин
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      срзнач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      сумм
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      счет
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      Текстовые
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Текстовые">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      длина
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      линияПодписи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      обрезатьпробелы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      прописн
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      пропнач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      пстр
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      строчн
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Формулы и синтаксис
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Формулы и синтаксис
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Формулы.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Синтаксис.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Синтаксис
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Документ.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Работа с документом
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Справочники
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Интеграция с внешними системами
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Интеграция с внешними системами
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1с.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1С
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Дадата.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ДаДата
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Битрикс.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Битрикс24
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BA%D1%81%D1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Поле «Текст»
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Для-разработчиков.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Для разработчиков
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Контактные-данные.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Контактные данные
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Вопросы.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Часто задаваемые вопросы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дата и Время
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дата и Время">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      дата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      датамес
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      конмесяца
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      начмесяца
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      разндат
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      сегодня
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      смещдат
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      тдата
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Логические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Логические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      если
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Математические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Математические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      округлить
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exp" class="md-nav__link">
+    <span class="md-ellipsis">
+      exp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      ln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log10" class="md-nav__link">
+    <span class="md-ellipsis">
+      log10
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Морфологические
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Морфологические">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      инициалы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      окончание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      склонение
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      транслит
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматВолюты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматДаты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      форматЧисла
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      числоСТекстом
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      Работа со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Работа со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      макс
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      мин
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      срзнач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      сумм
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      счет
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      Текстовые
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Текстовые">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      длина
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      линияПодписи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      обрезатьпробелы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      прописн
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      пропнач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      пстр
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      строчн
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Функции</h1>
+
+<hr />
+<p><strong>Функции</strong> — это полезные инструменты, которые помогают автоматически обрабатывать данные в шаблонах. Они работают как маленькие помощники, выполняя за вас разные задачи. Благодаря функциям, шаблоны становятся «умными» — они могут подстраиваться под данные и быстро выполнять нужные действия.</p>
+<hr />
+<p><strong>Как перейти к функциям?</strong></p>
+<ol>
+<li>Дважды щёлкните левой кнопкой мыши по полю в области редактирования.</li>
+<li>В появившемся окне нажмите на кнопку <strong>f(x)</strong>.</li>
+<li>Выберите подходящию функцию.</li>
+</ol>
+<hr />
+<h2 id="_1">Дата и Время</h2>
+<p><strong>🛑 Ошибка</strong></p>
+<p>📌 Функции не будут работать, если они стоят перед форматом даты. Например: <strong>конмесяца(форматДаты(дата, ФорматДаты.ДатаКратко), 2)</strong></p>
+<p><strong>Объяснение:</strong></p>
+<p>Функция <strong>форматДаты</strong> предназначена для преобразования даты в текст, например: <strong>"24.01.2025"</strong>. Но когда вы используете её внутри других функций, возникает ошибка. Почему? Потому что функции <strong>датамес, конмесяца, начмесяца, разндат, смещдат</strong> работают только напрямую с датами, а текстом — нет.</p>
+<p><strong>Почему это происходит?</strong></p>
+<ul>
+<li>Функция <strong>форматДаты</strong> превращает дату в текст, например: "24.01.2025".</li>
+<li>Функции <strong>датамес, конмесяца, начмесяца, разндат, смещдат</strong> ожидает именно дату. Если ей дать текст вместо даты, она не сможет работать и выдаст ошибку.</li>
+</ul>
+<p><strong>Как исправить?</strong></p>
+<ul>
+<li>Сначала используйте функции <strong>датамес, конмесяца, начмесяца, разндат, смещдат</strong>.</li>
+<li>Затем примените <strong>форматДаты</strong>, чтобы корректно отобразить результат.</li>
+</ul>
+<p><code>форматДаты(конмесяца(дата, 2), ФорматДаты.ДатаКратко)</code></p>
+<h3 id="_2"><strong>дата</strong></h3>
+<blockquote>
+<p>Данная функция используется для задания конкретной даты на основе введённых параметров: день, месяц и год. Она может принимать как фиксированные значения (например, 12.12.2024), так и динамические данные в виде переменных (текст или целое число).</p>
+</blockquote>
+<ol>
+<li><strong>Параметры:</strong></li>
+</ol>
+<p>Функция принимает три обязательных параметра:</p>
+<ul>
+<li><strong>День (дд)</strong>: число от 1 до 31.</li>
+<li><strong>Месяц (мм)</strong>: число от 1 до 12.</li>
+<li>
+<p><strong>Год (гггг)</strong>: полное числовое значение года, например, 2024.</p>
+</li>
+<li>
+<p><strong>Типы данных:</strong></p>
+</li>
+<li>
+<p><strong>Конкретные значения:</strong> вы можете указать точную дату, например, 12, 12, 2024.</p>
+</li>
+<li>
+<p><strong>Переменные:</strong> вместо фиксированных чисел можно использовать переменные, такие как: поле текст или целое число.</p>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает полную дату, сформированную из переданных параметров, например: <strong>12.12.2024 00:00:00</strong>. Чтобы убрать время <strong>(00:00:00)</strong> после даты, необходимо применить функцию <strong><a href="./#_20">"Формат валюты"</a></strong></p>
+</li>
+</ul>
+<hr />
+<h3 id="_3"><strong>датамес</strong></h3>
+<blockquote>
+<p>Данная функция берёт исходную дату и сдвигает её на указанное количество месяцев вперёд или назад. Сдвиг можно задать как фиксированным числом, так и переменной, связанной с полем, значение которого будет определяться динамически.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+</li>
+<li>
+<p><strong>День:</strong> исходная дата, от которой будет производиться сдвиг. Указывать нужно идентификатор поля <strong>Дата</strong></p>
+</li>
+<li>
+<p><strong>Сдвиг месяцев:</strong> Указывает, на сколько месяцев нужно сместить дату.</p>
+<ul>
+<li>Если введено число (например, 3), дата сместится на указанное количество месяцев вперёд.</li>
+<li>Если указан идентификатор поля с типом "Целое число", значение этого поля определит величину сдвига.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает новую дату, которая соответствует исходной дате, сдвинутой на указанное количество месяцев.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_4"><strong>конмесяца</strong></h3>
+<blockquote>
+<p>Функция используется для получения последнего дня месяца, основываясь на заданной дате. Она также позволяет смещать эту дату на указанное количество месяцев вперёд или назад.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+</li>
+<li>
+<p><strong>Дата (обязательный параметр):</strong> исходная дата, от которой ведётся расчёт. Где вы можете передать идентификатор поля, содержащий дату.</p>
+</li>
+<li>
+<p><strong>Сдвиг месяцев (обязательный параметр):</strong> указывает, на сколько месяцев нужно сместить дату.</p>
+<ul>
+<li><strong>Положительное значение:</strong> сдвигает дату на указанное количество месяцев вперёд.</li>
+<li><strong>Отрицательное значение:</strong> сдвигает дату на указанное количество месяцев назад.</li>
+<li>Если введено число (например, 3), дата сместится на указанное количество месяцев вперёд.</li>
+<li>Если указан идентификатор поля с типом "Целое число", значение этого поля определит величину сдвига.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает последнюю дату месяца, рассчитанную с учётом указанного сдвига.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_5"><strong>начмесяца</strong></h3>
+<blockquote>
+<p>Функция используется для получения первого дня месяца, основываясь на заданной дате. Она также позволяет смещать эту дату на указанное количество месяцев вперёд или назад.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+</li>
+<li>
+<p><strong>Дата (обязательный параметр):</strong> исходная дата, от которой ведётся расчёт. Где вы можете передать идентификатор поля, содержащий дату.</p>
+</li>
+<li>
+<p><strong>Сдвиг месяцев (обязательный параметр):</strong> указывает, на сколько месяцев нужно сместить дату.</p>
+<ul>
+<li><strong>Положительное значение:</strong> сдвигает дату на указанное количество месяцев вперёд.</li>
+<li><strong>Отрицательное значение:</strong> сдвигает дату на указанное количество месяцев назад.</li>
+<li>Если введено число (например, 3), дата сместится на указанное количество месяцев вперёд.</li>
+<li>Если указан идентификатор поля с типом "Целое число", значение этого поля определит величину сдвига.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает первую дату месяца, рассчитанную с учётом указанного сдвига.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_6"><strong>разндат</strong></h3>
+<blockquote>
+<p>Функция вычисляет разность дней, месяцев и лет.</p>
+</blockquote>
+<ol>
+<li><strong>Параметры:</strong></li>
+</ol>
+<p>Функция принимает два обязательных параметра:</p>
+<ul>
+<li>Дата начала.</li>
+<li>
+<p>Дата окончания.</p>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает разность двух дат.</p>
+</li>
+</ul>
+<hr />
+<h3 id="_7"><strong>сегодня</strong></h3>
+<blockquote>
+<p>Функция возвращает текущую дату (дату, на которую производится расчёт или создание документа). Она может использоваться как самостоятельно, так и в сочетании с другими функциями и полями для автоматизации работы с датами.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Особенности:</strong></p>
+</li>
+<li>
+<p><strong>Самостоятельное использование.</strong> Функция не требует ввода данных или привязки к полю. Она автоматически возвращает текущую дату. Минусом данного способа является невозможность редактировать дату.</p>
+</li>
+<li><strong>Использование в сочетании с полями.</strong> Функцию можно написать в свойствах поля (в разделе <strong>"значение по умолчанию"</strong>). В этом случае поле автоматически подставит текущую дату, с возможностью её редактирования.</li>
+<li>
+<p>Функция не принимает параметры.</p>
+</li>
+<li>
+<p><strong>Синтаксис:</strong></p>
+</li>
+<li>
+<p>сегодня()</p>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает текущую дату.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_8"><strong>смещдат</strong></h3>
+<blockquote>
+<p>Данная функция позволяет смещать дату на определённое количество <strong>дней</strong> вперёд или назад. Дата может смещаться на фиксированное количество дней или меняться динамически, в зависимости от числа, введённого пользователем.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+</li>
+<li>
+<p><strong>Дата (обязательный параметр):</strong> исходная дата, от которой ведётся расчёт. Где вы можете передать идентификатор поля, содержащий дату.</p>
+</li>
+<li>
+<p><strong>Количество дней (обязательный параметр):</strong> указывает, на сколько дней нужно сместить дату.</p>
+<ul>
+<li><strong>Положительное значение:</strong> сдвигает дату на указанное количество дней вперёд.</li>
+<li><strong>Отрицательное значение:</strong> сдвигает дату на указанное количество дней назад.</li>
+<li>Если введено число (например, 3), дата сместится на указанное количество дней вперёд.</li>
+<li>Если указан идентификатор поля с типом "Целое число", значение этого поля определит величину сдвига.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает новую дату, сдвинутую на указанное количество дней.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_9"><strong>тдата</strong></h3>
+<blockquote>
+<p>Функция используется для автоматического получения текущей даты и времени. Её поведение зависит от того, как она используется: с полями или без них. Она позволяет зафиксировать точное время, но возможность редактирования значения зависит от контекста её использования.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Особенности:</strong></p>
+</li>
+<li>
+<p><strong>Самостоятельное использование.</strong> Функция не требует ввода данных или привязки к полю. Она автоматически возвращает текущую дату и время. Минусом данного способа является невозможность редактировать дату.</p>
+</li>
+<li><strong>Использование в сочетании с полями.</strong> Функцию можно написать в свойствах поля (в разделе <strong>"значение по умолчанию"</strong>). В этом случае поле автоматически подставит текущую дату и время, с возможностью её редактирования.</li>
+<li>
+<p>Функция не принимает параметры.</p>
+</li>
+<li>
+<p><strong>Синтаксис:</strong></p>
+</li>
+<li>
+<p>тдата()</p>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+</li>
+<li>
+<p>Функция возвращает текущую дату и время.</p>
+</li>
+</ol>
+<hr />
+<h2 id="_10">Логические</h2>
+<h3 id="_11"><strong>если</strong></h3>
+<blockquote>
+<p>Функция <strong>"ЕСЛИ"</strong> — это логическая функция, которая позволяет выполнять различные действия в зависимости от результата проверки заданного условия. Она оценивает условие на истинность и возвращает одно значение, если условие выполняется (истинно), и другое значение, если условие не выполняется (ложно).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+</li>
+<li>
+<p><strong>Условие:</strong></p>
+<ul>
+<li>Это логическое выражение, которое проверяется на истинность.</li>
+<li>Оно может быть сравнением (например, A1 &gt; 10), проверкой равенства (например, B2 = "Да") или любым другим выражением, которое возвращает истину или ложь.</li>
+<li><strong>Пример:</strong> <code>полеПеречисление = "1 вариант"</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Значение истина:</strong></p>
+<ul>
+<li>Это значение или действие, которое выполняется, если условие истинно.</li>
+<li>Может быть текстом, числом, формулой или ссылкой на другую ячейку.</li>
+<li><strong>Пример:</strong> <code>полеТекст = "Пример текста"</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Значение ложь</strong>:</p>
+<ul>
+<li>Это значение или действие, которое выполняется, если условие ложно.</li>
+<li>Также может быть текстом, числом, формулой или ссылкой на другую ячейку.</li>
+<li><strong>Пример:</strong> <code>полеЦелое = "Пример текста"</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Синтаксис:</strong></p>
+<ul>
+<li>если(условие, значение<em>если</em>истина, значение<em>если</em>ложь)</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример использования:</strong></p>
+<ul>
+<li><strong>Пример с текстом:</strong><ul>
+<li><code>если(A1 = "Да"; "Согласен"; "Не согласен")</code></li>
+</ul>
+</li>
+<li><strong>Пример с числами:</strong><ul>
+<li><code>если(B2 &gt; 100; "Больше 100"; "Меньше или равно 100")</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает один из двух результатов в зависимости от выполнения заданного условия.</li>
+</ul>
+</li>
+</ol>
+<h2 id="_12">Математические</h2>
+<h3 id="_13"><strong>округлить</strong></h3>
+<blockquote>
+<p>Функция выполняет округление числового значения до указанного количества знаков после запятой.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Значение (обязательный параметр)</strong> – идентификатор поля "Десятичное число".</li>
+<li><strong>Знаков после запятой (обязательный параметр)</strong> – количество знаков после десятичной точки, до которых выполняется округление.<ul>
+<li><strong>Положительное значение:</strong> округление до указанного количества знаков после запятой.</li>
+<li><strong>Ноль (0):</strong> округление до целого числа.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает округленное значение в соответствии с заданными параметрами.</li>
+</ul>
+</li>
+</ol>
+<h3 id="exp"><strong>exp</strong></h3>
+<blockquote>
+<p>Функция <strong>экспоненты (exp)</strong> используется для вычисления экспоненциального роста или изменения. Проще говоря, она позволяет рассчитать, как быстро что-то увеличивается или уменьшается по мере роста значения. Основанием этой функции является число <strong>e</strong>, которое примерно равно <strong>2.718</strong>.</p>
+</blockquote>
+<p><strong>Работа функции:</strong></p>
+<p>Экспонента берёт число <strong>e</strong> и возводит в степень, которую указываете. Например, если хотите возвести e в степень 2, то используете функцию <strong>exp(2)</strong>, которая вернёт значение примерно <strong>7.389</strong>.</p>
+<p>Если взять <strong>exp(2)</strong>, это <strong>e</strong> возведённое в квадрат: <strong>2.718^2 ≈ 7.389</strong>.</p>
+<p>Чем больше степень, тем быстрее растёт результат. Если же степень отрицательная, результат будет меньше единицы, что означает уменьшение или спад.</p>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Значение (Идентификатор поля)</strong> — число, которое является показателем степени для числа e.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает значение числа <strong>e</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="ln"><strong>ln</strong></h3>
+<blockquote>
+<p>Функция <strong>логарифма (ln)</strong>, или <strong>натуральный логарифм</strong> — это «обратная» операция для возведения в степень. Если известно результат числа, возведённого в степень, логарифм помогает найти степень. Основанием этой функции является математическая константа <strong>e</strong>, которая примерно равна <strong>2.718</strong>.</p>
+</blockquote>
+<p><strong>Работа функции:</strong></p>
+<p>Логарифмы помогают понять, как быстро что-то растёт или уменьшается со временем, будь то деньги или рост бактерий. Это полезный инструмент для анализа процессов, которые развиваются неравномерно, например, экспоненциально.</p>
+<p>Если известно, что <strong>e^2 = 7.389</strong>, то <strong>ln(7.389) = 2</strong>. Это значит, что, чтобы получить число <strong>7.389</strong>, нужно было возвести <strong>e</strong> в степень <strong>2</strong>.</p>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Значение (Идентификатор поля)</strong> – число, для которого нужно вычислить логарифм. Значение должно быть положительным (x&gt;0), так как логарифм отрицательных чисел и нуля не определён.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает результат вычисления натурального логарифма.</li>
+</ul>
+</li>
+</ol>
+<h3 id="log10"><strong>log10</strong></h3>
+<blockquote>
+<p>Функция <strong>общего логарифма (log10)</strong>, в отличие от натурального логарифма, используется для вычисления логарифма числа по любому основанию, а не только по числу e. Наиболее часто используемый вид общего логарифма — это десятичный логарифм (логарифм по основанию 10).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Значение (Идентификатор поля)</strong> – число, для которого нужно вычислить десятичный логарифм. Значение должно быть положительным (x&gt;0), так как логарифм отрицательных чисел и нуля не определён.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция <strong>log10(x)</strong> возвращает десятичный (декадный) логарифм числа <strong>x</strong>, то есть степень, в которую нужно возвести 10, чтобы получить <strong>x</strong>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="_14">Морфологические</h2>
+<h3 id="_15"><strong>инициалы</strong></h3>
+<blockquote>
+<p>Функция <strong>«Инициалы»</strong> используется для преобразования полного имени <strong>(Фамилия Имя Отчество)</strong> в заданный формат – с сокращениями (инициалами) или без, а также в нужном падеже. Она позволяет автоматически формировать ФИО в удобном виде для документов, списков, подписей и т.д.</p>
+</blockquote>
+<p><strong>⚠️ Важно</strong></p>
+<p>Если нужно склонять обычные слова или фразы, используйте функцию «Склонение», так как «Инициалы» обрабатывает только ФИО.</p>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение для имени</strong> – это идентификатор поля, откуда берется ФИО.</li>
+<li><strong>Падеж</strong> – определяет, в какой грамматической форме будет выведено имя.</li>
+<li><strong>Формат</strong> – задаёт, в каком виде будет представлено ФИО (с инициалами, без отчества и т. д.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает строку с преобразованным ФИО в зависимости от заданных параметров: падежа и формата.</li>
+</ul>
+</li>
+</ol>
+<p>🛑 <strong>Внимание:</strong></p>
+<p>Если ФИО отображается некорректно, в режиме заполнения нажмите на значок ⚙️ рядом с полем ФИО (в <strong>области редактирования</strong>). В окне <strong>«Грамматические исключения»</strong> в строке <strong>«Значение»</strong> введите <strong>ФИО</strong> в правильном падеже.</p>
+<h3 id="_16"><strong>окончание</strong></h3>
+<blockquote>
+<p>Функция <strong>«окончание»</strong> используется для автоматического изменения окончания слова в зависимости от рода или числа.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<p>Функция принимает 5 параметров:</p>
+<ul>
+<li><strong>Выражение слова:</strong> идентификатор поля ФИО, по которому будет проверяться род человека (М/Ж) и число (Мн/Ед).</li>
+<li><strong>Мужской род:</strong> в данном параметре прописывают только окончание слова в кавычках. <strong>Например: "ый"</strong>.</li>
+<li><strong>Женский род:</strong> в данном параметре прописывают только окончание слова в кавычках. <strong>Например: "ая"</strong>.</li>
+<li><strong>Средний род:</strong> в данном параметре прописывают только окончание слова в кавычках. <strong>Например: "ое"</strong>.</li>
+<li><strong>Множественное число:</strong> в данном параметре прописывают только окончание слова в кавычках. <strong>Например: "ые"</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Синтаксис:</strong></p>
+<ul>
+<li>окончание(фио,"ый","ая","ой","ые")</li>
+</ul>
+</li>
+<li>
+<p><strong>Пример:</strong></p>
+<ul>
+<li>Уважаем{окончание(фио,"ый","ая","ой","ые")}</li>
+</ul>
+</li>
+<li>
+<p><strong>Работа с функцией:</strong></p>
+<ul>
+<li>Введите слово <strong>без окончания</strong> в области редактирования. Например: <strong>"Уважаем"</strong>.</li>
+<li>В конец написанного слова добавьте текстовое поле (например, ФИО).</li>
+<li>Дважды кликните левой кнопкой мыши по добавленному полю, чтобы перейти в функции.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает правильное окончание в зависимости от рода и числа.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_17"><strong>склонение</strong></h3>
+<blockquote>
+<p>Функция <strong>«Склонение»</strong> используется для изменения формы отдельных слов или целых предложений в зависимости от заданного падежа и числа.</p>
+</blockquote>
+<p><strong>⚠️ Важно:</strong></p>
+<p>Функция не предназначена для работы с ФИО. Для склонения имён и фамилий нужно использовать функцию <strong>«Инициалы»</strong>.</p>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение слова</strong> – это идентификатор поля, откуда берется слово.</li>
+<li><strong>Падеж</strong> – определяет грамматический падеж, в котором будет представлено слово.</li>
+<li><strong>Число</strong> – определяет, будет ли слово в единственном или множественном числе.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает слово или фразу в нужной грамматической форме.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_18"><strong>транслит</strong></h3>
+<blockquote>
+<p>Функция <strong>«Транслитерация»</strong> превращает русские буквы в английские, заменяя их на похожие по звучанию символы.</p>
+<p>Используется для перевода текста с кириллицы (русский алфавит) на латиницу (английский алфавит).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Значения:</strong> идентификатор текстового поля, которое необходимо преобразовать.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает текст, записанный латиницей, заменяя каждую русскую букву на соответствующий английский аналог, например, "Москва" -&gt; "Moskva", "Привет" -&gt; "Privet"</li>
+</ul>
+</li>
+</ol>
+<h3 id="_19"><strong>форматВолюты</strong></h3>
+<blockquote>
+<p>Функция <strong>«Формат валюты»</strong> предназначена для форматирования числовых значений в виде денежных сумм с указанием валюты. Она добавляет разделители тысяч, округляет число до определённого количества знаков после запятой и добавляет символ валюты.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает конкретное число или идентификатор поля, содержащий целое или десятичное число.</li>
+<li><strong>Формат:</strong> определяет, как будет выглядеть отформатированная сумма.<ul>
+<li>Например: 1 234 (одна тысяча двести тридцать четыре) рубля 57 копеек.</li>
+</ul>
+</li>
+<li><strong>Падеж:</strong> указывает, в каком падеже нужно отображать валюту.</li>
+<li><strong>Разделитель тысяч.</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция форматирует число в удобный денежный вид, добавляя валютный символ, разделители тысяч и учитывая склонение единицы измерения.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_20"><strong>форматДаты</strong></h3>
+<blockquote>
+<p>Функция <strong>«Формат даты»</strong> предназначена для форматирования даты. Она позволяет преобразовать дату в удобочитаемый текстовый формат в соответствии с выбранными параметрами.</p>
+<p>Функция изменяет не саму дату, а только её отображение. Например, <strong>01.12.2023</strong> может быть представлено как <strong>«1 декабря 2023 года»</strong>, <strong>«01.12.2023»</strong> или <strong>«декабрь 2023»</strong>. Используется для корректного оформления дат в документах и отчётах.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает конкретную дату, заключённую в функцию <code>дата(день, месяц, год)</code>, или идентификатор поля, содержащий дату.</li>
+<li><strong>Формат:</strong> определяет стиль отображения даты (например, <strong>1 декабря 2023 года, «01» декабря 2023 г., 01.12.2023</strong>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция берёт дату и преобразует её в заданный формат, возвращая результат в текстовом виде.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_21"><strong>форматЧисла</strong></h3>
+<blockquote>
+<p>Функция <strong>«Формат числа»</strong> предназначена для форматирования числовых значений, содержащихся в поле типа «Десятичное число». Она позволяет устанавливать количество знаков после запятой, настраивать разделители тысяч и дробной части, а также применять пользовательские форматы отображения чисел.</p>
+<p>Функция не изменяет само число, а только визуально представляет его в заданном формате.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Число:</strong> указывает, какое значение нужно отформатировать. Принимает только идентификатор поля типа «Десятичное число» или «Целое число».</li>
+<li><strong>Свой формат:</strong> позволяет задать точный вид числа, управляя разрядами, нулями и разделителями. Доступные символы для строки формата:<ul>
+<li><code>#</code> - разряд числа. Отображает только значимые разряды.</li>
+<li><code>0</code> - разряд числа с подстановкой 0. Если в числе цифры на этом месте нет, подставляется "0".</li>
+<li><code>.</code> - положение разделителя дробной части. Может присутствовать только в единственном экземпляре.</li>
+<li><code>,</code> - положение разделителя тысяч.</li>
+</ul>
+</li>
+<li><strong>Знаков после запятой:</strong> определяет, сколько знаков оставить в дробной части (например, 2).</li>
+<li><strong>Разделитель дробной части:</strong> определяет, какой символ отделяет дробную часть.<ul>
+<li><code>.</code> (точка)</li>
+<li><code>,</code> (запятая)</li>
+</ul>
+</li>
+<li><strong>Разделитель тысяч:</strong> определяет, какой символ разделяет тысячи.<ul>
+<li><code>" "</code> (пробел)</li>
+<li><code>.</code> (точка)</li>
+<li><code>,</code> (запятая)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция преобразует число в удобочитаемый формат, добавляя нужное количество знаков после запятой, разделители тысяч и правильно округляя.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_22"><strong>числоСТекстом</strong></h3>
+<blockquote>
+<p>Функция <strong>«Число с текстом»</strong> автоматически преобразует числовое значение в текст, согласуя его с указанным словом по числу и падежу, позволяя динамически изменять формы слов в зависимости от числа и формата записи (цифрами или прописью) для корректного оформления документов и текстов.</p>
+<p>Функция автоматически выбирает правильную форму слова (ед. или мн. число).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение числа:</strong> указывает, какое число должно быть преобразовано. Принимает:<ul>
+<li>Конкретное число.</li>
+<li>Идентификатор числовых полей.</li>
+</ul>
+</li>
+<li><strong>Выражение слова:</strong> определяет слово, которое изменяется вместе с числом. Принимает:<ul>
+<li>Простые слова указываются в <strong>именительном падеже</strong> и записываются в <strong>двойных кавычках</strong>.</li>
+</ul>
+</li>
+<li><strong>Формат:</strong> определяет, как будет записано число — цифрами или словами, а также влияет на его тип: количественный или порядковый.</li>
+<li><strong>Падеж:</strong> определяет грамматический падеж, в котором будет стоять слово.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция выводит число и слово в правильной форме с учетом грамматического падежа, формата записи числа и склонения слова, например:«5 этажей», «пять комнат».</li>
+</ul>
+</li>
+</ol>
+<h2 id="_23">Работа со списками</h2>
+<p><strong>📌 Важно:</strong></p>
+<ul>
+<li>Список — это как таблица.</li>
+<li>Элемент списка — это строка в таблице.</li>
+<li>Выражение — это колонка с числовыми значениями.</li>
+</ul>
+<h3 id="_24"><strong>макс</strong></h3>
+<blockquote>
+<p>Функция <strong>«Максимальное»</strong> используется для поиска наибольшего значения в списке. Она применяется, когда необходимо определить максимальное число среди элементов списка, например, самую высокую цену, максимальный балл или наибольшее количество товаров.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Список:</strong> идентификатор поля, содержащего список элементов.</li>
+<li><strong>Название элемента списка:</strong> поле внутри списка, по которому ищется максимальное значение.</li>
+<li>
+<p><strong>Выражение:</strong> указывает, какое именно значение сравнивать.</p>
+<p>💡 Если элемент списка является <strong>составным полем</strong>, то в выражении сначала указывается его название, затем через <strong>точку</strong> — название поля внутри него (пример: <code>стоимость.цена</code>), а если элемент списка <strong>не является составным полем</strong>, то выражение просто совпадает с его названием (пример: <code>сумма</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает наибольшее числовое значение из указанного списка.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_25"><strong>мин</strong></h3>
+<blockquote>
+<p>Функция <strong>«Минимальное»</strong> используется для поиска наименьшего значения в списке.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Список:</strong> идентификатор поля, содержащего список элементов.</li>
+<li><strong>Название элемента списка:</strong> поле внутри списка, по которому ищется минимальное значение.</li>
+<li>
+<p><strong>Выражение:</strong> указывает, какое именно значение сравнивать.</p>
+<p>💡 Если элемент списка является <strong>составным полем</strong>, то в выражении сначала указывается его название, затем через <strong>точку</strong> — название поля внутри него (пример: <code>стоимость.цена</code>), а если элемент списка <strong>не является составным полем</strong>, то выражение просто совпадает с его названием (пример: <code>сумма</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает наименьшее числовое значение из указанного списка.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_26"><strong>срзнач</strong></h3>
+<blockquote>
+<p>Функция <strong>«Среднее значение»</strong> вычисляет среднее арифметическое числовых значений в указанном списке, позволяя определить среднюю стоимость и другие показатели, где необходимо усреднить данные.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Список:</strong> идентификатор поля, содержащего список элементов.</li>
+<li><strong>Название элемента списка:</strong> поле внутри списка, по которому ищется среднее значение.</li>
+<li>
+<p><strong>Выражение:</strong> указывает, какое именно значение сравнивать.</p>
+<p>💡 Если элемент списка является <strong>составным полем</strong>, то в выражении сначала указывается его название, затем через <strong>точку</strong> — название поля внутри него (пример: <code>стоимость.цена</code>), а если элемент списка <strong>не является составным полем</strong>, то выражение просто совпадает с его названием (пример: <code>сумма</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает среднее арифметическое чисел из указанного списка, вычисляя его по формуле: <strong>сумма всех значений / количество элементов</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_27"><strong>сумм</strong></h3>
+<blockquote>
+<p>Функция <strong>«Сумма»</strong> вычисляет сумму всех числовых значений в указанном списке. Она используется для расчёта общей стоимости товаров, общего количества единиц, суммарных баллов и других агрегированных числовых показателей.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Список:</strong> это набор данных (например, список товаров, заказов, платежей). Принимает идентификатор поля "Список".</li>
+<li><strong>Название элемента списка:</strong> это одна запись в этом списке (например, один товар, один заказ).</li>
+<li>
+<p><strong>Выражение:</strong> это конкретное поле в элементе списка, содержащее числовые значения, которые необходимо суммировать (например, цена, количество, сумма).</p>
+<p>💡 Если элемент списка является <strong>составным полем</strong>, то в выражении сначала указывается его название, затем через <strong>точку</strong> — название поля внутри него (пример: <code>стоимость.цена</code>), а если элемент списка <strong>не является составным полем</strong>, то выражение просто совпадает с его названием (пример: <code>сумма</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция проходит по всему списку, берёт из каждого элемента указанное выражение и складывает его значения.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_28"><strong>счет</strong></h3>
+<blockquote>
+<p>Функция <strong>«Сумма»</strong> подсчитывает количество элементов в указанном списке. Она используется, когда нужно определить, сколько строк, товаров, заказов или других записей содержится в списке.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Список:</strong> указывает, в каком списке нужно посчитать элементы. Принимает идентификатор поля "Список".</li>
+<li><strong>Название элемента списка:</strong> указывает, какие именно элементы учитывать в подсчёте.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает <strong>количество элементов</strong> в указанном списке.</li>
+</ul>
+</li>
+</ol>
+<h2 id="_29">Текстовые</h2>
+<h3 id="_30"><strong>длина</strong></h3>
+<blockquote>
+<p>Функция <strong>«Длина»</strong> вычисляет количество символов в переданном выражении, включая буквы, цифры, пробелы и знаки препинания. Она используется для анализа длины текста в поле, например, для подсчёта символов в строке или проверки соответствия требованиям.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает либо идентификатор текстового поля, либо строку в кавычках.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает количество символов в переданном тексте или значении текстового поля.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_31"><strong>линияПодписи</strong></h3>
+<blockquote>
+<p>Функция <strong>«Линия подписи»</strong> предназначена для обозначения места подписи в документах. Длина линии напрямую зависит от числового значения, переданного в функцию. Функция принимает только числовые значения или функции, которые преобразуют текст в числа, и использует их для определения длины линии. Положение и толщина линии остаются неизменными и задаются внутри функции.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает числовое значение или функцию, которая возвращает число.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает линию подписи с длиной, зависящей от переданного числового значения.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_32"><strong>обрезатьпробелы</strong></h3>
+<blockquote>
+<p>Функция <strong>«Обрезать пробелы»</strong> предназначена для удаления пробелов в начале и конце строки, не затрагивая пробелы между словами.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает идентификатор текстового поля или строку в двойных кавычках.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает строку, в которой удалены все пробелы в начале и конце, но пробелы между словами остаются без изменений.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_33"><strong>прописн</strong></h3>
+<blockquote>
+<p>Функция <strong>«Прописные»</strong> преобразует текст в верхний регистр (заглавные буквы).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает идентификатор текстового поля или строку в двойных кавычках.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает строку, в которой все буквы приведены к верхнему регистру, не изменяя не-буквенные символы (цифры, знаки препинания и пробелы).</li>
+</ul>
+</li>
+</ol>
+<h3 id="_34"><strong>пропнач</strong></h3>
+<blockquote>
+<p>Функция <strong>«Прописные начальные»</strong> преобразует первую букву каждого слова в верхний регистр (заглавную букву).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает идентификатор текстового поля или строку в двойных кавычках.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает строку, в которой начальные буквы каждого слова приведены к верхнему регистру.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_35"><strong>пстр</strong></h3>
+<blockquote>
+<p>Функция <strong>«Подстрока»</strong> извлекает часть строки (подстроку) из исходной строки. Она позволяет указать, с какой позиции начать извлечение и сколько символов нужно взять.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает идентификатор текстового поля или строку в двойных кавычках.</li>
+<li><strong>Начальная позиция:</strong> номер символа, с которого начинается извлечение. Отсчёт начинается с 1.</li>
+<li><strong>Число знаков:</strong> количество символов, которые нужно извлечь.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает подстроку — часть исходной строки, начиная с указанной позиции и заданной длины.</li>
+</ul>
+</li>
+</ol>
+<h3 id="_36"><strong>строчн</strong></h3>
+<blockquote>
+<p>Функция <strong>«Строчные»</strong> предназначена для преобразования текста в нижний регистр (строчные буквы).</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Параметры:</strong></p>
+<ul>
+<li><strong>Выражение:</strong> принимает идентификатор текстового поля или строку в двойных кавычках.</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат:</strong></p>
+<ul>
+<li>Функция возвращает строку, в которой все буквы преобразованы в нижний регистр (строчные буквы), а не-буквенные символы (цифры, знаки препинания, пробелы и т.д.) остаются без изменений.</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "collapsible_navigation"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
