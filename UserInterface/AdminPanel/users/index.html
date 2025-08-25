@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../summary/">
+      
+      
+        <link rel="next" href="../roles/">
       
       
       <link rel="icon" href="../../../img/logo.png">
@@ -212,8 +216,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -225,16 +231,16 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -248,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Интерфейс пользователя
@@ -699,6 +705,155 @@
   
   <span class="md-ellipsis">
     Импорт структуры и записей
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Панель администратора
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Панель администратора
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Основная информация
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Пользователи
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Роли
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settingsDadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Настройки
   </span>
   
 
@@ -2688,30 +2843,30 @@
 
 <h1 id="_1">Пользователи</h1>
 <p>Этот раздел предназначен для <strong>управления пользователями организации</strong>.</p>
-<p>Функционал включает:</p>
+<p><strong>Функционал включает:</strong></p>
 <ol>
 <li>
 <p><strong>Список пользователей</strong></p>
-</li>
-<li>
-<p>Отображаются все пользователи, подключённые к организации.</p>
+<ul>
+<li>Отображаются все пользователи, подключённые к организации.</li>
+</ul>
 </li>
 <li>
 <p><strong>Добавление новых пользователей</strong></p>
-</li>
+<ul>
 <li>
 <p>Кнопка «Добавить пользователя» позволяет подключить нового участника.</p>
 <p><img alt="1" src="../../img/AdminPanel/1.png" /></p>
 <p>Для этого введите адрес электронной почты человека, которого хотите добавить. На указанную почту придёт письмо с приглашением, где будет указана ссылка на <a href="https://app.kombinator.ru/App">app.kombinator.ru</a>, а также логин и пароль для входа в систему.</p>
-<p>После первого входа пользователь может сменить пароль в <a href="">настройках</a></p>
+<p>После первого входа пользователь может сменить пароль в <a href="../../Interface/interface/">настройках</a></p>
 <p>⚠️ Не забудьте после добавления назначить пользователю подходящую роль (см.ниже)</p>
+</li>
+</ul>
 </li>
 <li>
 <p><strong>Управление доступом</strong></p>
-</li>
-<li>
-<p>Для каждого пользователя можно назначать и изменять роли (например, администратор, разработчик шаблонов и т. д.).</p>
-</li>
+<ul>
+<li>Для каждого пользователя можно назначать и изменять роли (например, администратор, разработчик шаблонов и т. д.).</li>
 <li>
 <p>Чтобы изменить роль:</p>
 <ul>
@@ -2719,19 +2874,21 @@
 <p>Кликните левой кнопкой мыши по добавленному пользователю.</p>
 </li>
 <li>
-<p>Откроется список доступных <a href="">ролей</a>.</p>
+<p>Откроется список доступных <a href="../roles/">ролей</a>.</p>
 <p><img alt="2" src="../../img/AdminPanel/2.png" /></p>
 </li>
 <li>
-<p>Выберите нужную роль и нажмите «Сохранить».</p>
+<p>Выберите нужную роль и нажмите <strong>«Сохранить»</strong>.</p>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li>
 <p><strong>Удаление пользователей</strong></p>
-</li>
-<li>
-<p>В интерфейсе есть возможность исключить пользователя из организации (иконка корзины).</p>
+<ul>
+<li>В интерфейсе есть возможность исключить пользователя из организации (иконка корзины).</li>
+</ul>
 </li>
 </ol>
 <p>Таким образом, данный раздел является центральной точкой <strong>администрирования пользователей</strong>: здесь добавляют новых сотрудников, управляют их ролями и при необходимости удаляют доступ.</p>
