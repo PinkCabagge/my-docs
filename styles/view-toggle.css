@@ -43,19 +43,6 @@
 /* По умолчанию спецовые блоки скрыты */
 .only-standalone,
 .only-bitrix {
-  display: none !important; /* по умолчанию скрыты */
+  display: block;
 }
 
-html[data-view="standalone"] .only-standalone {
-  display: block !important;
-}
-
-html[data-view="bitrix"] .only-bitrix {
-  display: block !important;
-}
-
-/* чтобы внезапно не схлопывались вложенные элементы */
-html[data-view="standalone"] .only-standalone > *,
-html[data-view="bitrix"] .only-bitrix > * {
-  display: revert;
-}

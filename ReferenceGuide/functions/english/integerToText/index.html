@@ -3304,21 +3304,10 @@
 </li>
 </ol>
 <h2 id="_3"><strong>Пример использования</strong></h2>
-<p>⚠️ <strong>Примечание</strong></p>
-<p>Шаги в примерах могут немного отличаться в зависимости от версии.</p>
-<ul>
-<li>
-<p>В <strong>облачной версии</strong> и в <strong>версии Битрикс24</strong> различаются пункты создания полей.</p>
-</li>
-<li>
-<p>В <strong>Битрикс24</strong> нет возможности работать со свойствами полей.</p>
-</li>
-<li>
-<p>При этом <strong>вставка полей</strong>, работа с <strong>функциями</strong> и <strong>метками</strong> остаются одинаковыми во всех версиях.</p>
-</li>
-</ul>
 <p><strong>Задача:</strong> вывести сумму в долларах и центах прописью (например <code>One thousand two hundred thirty-four US dollars fifty-six cents</code>).</p>
 <p><strong>Шаги:</strong></p>
+<!-- only: standalone -->
+
 <ol>
 <li>
 <p>Создайте поле <strong>«Десятичное число»</strong> с идентификатором <code>сумма</code>.</p>
@@ -3355,10 +3344,58 @@ integerToText(округлить(сумма остаток - 1 * 100, 0), Number
 <li>
 <p><code>&amp;</code> — объединение фрагментов.</p>
 </li>
+<li>
+<p><code>сумма</code> — поле из анкеты.</p>
+</li>
 </ul>
 <p><strong>Пример:</strong></p>
 <p>Если поле <strong>Сумма</strong> содержит значение <code>1234,56</code>, на выходе получится строка:</p>
 <p><img alt="" src="../../../img/functions/7.png" /></p>
+<!-- /only -->
+
+<!-- only: bitrix -->
+
+<ol>
+<li>
+<p>Вставьте в шаблон <strong>метку "Значение"</strong>.</p>
+</li>
+<li>
+<p>В открывшемся окне введите следующее выражение:</p>
+</li>
+</ol>
+<pre><code>integerToText(сумма, NumberType.Cardinal) &amp; &quot; &quot; &amp; 
+если(сумма = 1, &quot;US dollar&quot;, &quot;US dollars&quot;) &amp; &quot; &quot; &amp; 
+integerToText(округлить(сумма остаток - 1 * 100, 0), NumberType.Cardinal) 
+&amp; &quot; &quot; &amp; если(округлить(сумма остаток - 1 * 100, 0) = 1, &quot;cent&quot;, &quot;cents&quot;)
+</code></pre>
+<p><strong>Пояснение:</strong></p>
+<ul>
+<li>
+<p><code>integerToText(сумма, NumberType.Cardinal)</code> —  переводит целую часть суммы в слова.</p>
+</li>
+<li>
+<p><code>если(сумма = 1, "US dollar", "US dollars")</code> — задает правильное окончание для доллара.</p>
+</li>
+<li>
+<p><code>сумма остаток - 1 * 100</code> — получение дробной части.</p>
+</li>
+<li>
+<p><code>округлить(..., 0)</code> — округление центов до целого числа.</p>
+</li>
+<li>
+<p><code>если(сумма остаток * 100 = 1, "cent", "cents")</code> — окончание для центов.</p>
+</li>
+<li>
+<p><code>&amp;</code> — объединение фрагментов.</p>
+</li>
+<li>
+<p><code>сумма</code> — поле из анкеты.</p>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Если поле <strong>Сумма</strong> содержит значение <code>1234,56</code>, на выходе получится строка:</p>
+<p><img alt="" src="../../../img/functions/7.png" /></p>
+<!-- /only -->
 
 
 
