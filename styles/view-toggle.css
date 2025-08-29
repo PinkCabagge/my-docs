@@ -1,0 +1,61 @@
+.view-toggle {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  margin-left: 2rem;     /* отодвигаем от поиска */
+  margin-right: 1.5rem;  /* расстояние до правого края */
+}
+
+.view-toggle .vt-btn {
+  border: none;
+  border-radius: 4px;
+  padding: .35rem .7rem;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+/* Комбинатор */
+.view-toggle .vt-btn[data-view="standalone"] {
+  background: #ffffff;
+  color: #7b4bcc;
+  border: 2px solid #7b4bcc;
+}
+.view-toggle .vt-btn[data-view="standalone"].is-active {
+  background: #e8e2f3;
+  color: #7b4bcc;
+}
+
+/* Bitrix */
+.view-toggle .vt-btn[data-view="bitrix"] {
+  background: #1da7f3;
+  color: #ffffff;
+  border: 2px solid #1da7f3;
+}
+.view-toggle .vt-btn[data-view="bitrix"].is-active {
+  background: #0c85c8;
+  border-color: #0c85c8;
+}
+
+/* ========== ДОБАВЛЯЕМ УПРАВЛЕНИЕ БЛОКАМИ ========== */
+
+/* По умолчанию спецовые блоки скрыты */
+.only-standalone,
+.only-bitrix {
+  display: none !important; /* по умолчанию скрыты */
+}
+
+html[data-view="standalone"] .only-standalone {
+  display: block !important;
+}
+
+html[data-view="bitrix"] .only-bitrix {
+  display: block !important;
+}
+
+/* чтобы внезапно не схлопывались вложенные элементы */
+html[data-view="standalone"] .only-standalone > *,
+html[data-view="bitrix"] .only-bitrix > * {
+  display: revert;
+}
