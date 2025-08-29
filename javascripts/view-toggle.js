@@ -1,5 +1,4 @@
 (function () {
-  // ----- РЕЖИМЫ -----
   const MODES = {
     standalone: { hideTitles: ["Работа в Битрикс24"], hidePathParts: ["/ReferenceGuide/Bitrix/"] },
     bitrix:     { hideTitles: ["Интерфейс пользователя"], hidePathParts: ["/UserInterface/"] }
@@ -9,13 +8,22 @@
   const urlParams = new URLSearchParams(location.search);
   const initialMode = urlParams.get("view") || localStorage.getItem(STORAGE_KEY) || "standalone";
 
-  // ----- УСТАНОВКА РЕЖИМА -----
   function setMode(mode, pushState = false) {
     const m = MODES[mode] ? mode : "standalone";
     localStorage.setItem(STORAGE_KEY, m);
     document.documentElement.setAttribute("data-view", m);
     applyMode(m);
     applyOnlyVisibility(m);
+
+    // --- ДОБАВИЛ: если выбрали Комбинатор → перейти на страницу "Организация интерфейса"
+    if (m === "standalone") {
+      const link = document.querySelector('a.md-nav__link[href*="UserInterface/Interface/interface.md"]');
+      if (link) {
+        location.href = link.href;
+        return; // сразу выходим, т.к. будет переход
+      }
+    }
+
     if (pushState) {
       const u = new URL(location.href);
       u.searchParams.set("view", m);
@@ -23,18 +31,15 @@
     }
   }
 
-  // ----- ПРИМЕНЕНИЕ РЕЖИМА (меню/редирект/состояние кнопок) -----
   function applyMode(mode) {
     const cfg = MODES[mode];
     const nav = document.querySelector(".md-nav--primary");
     if (nav && cfg) {
-      // показать всё, что ранее прятали
       nav.querySelectorAll("[data-toggle-hidden]").forEach(el => {
         el.style.display = "";
         el.removeAttribute("data-toggle-hidden");
       });
 
-      // спрятать разделы по названию
       nav.querySelectorAll(".md-nav__title, .md-nav__link").forEach(el => {
         const text = (el.textContent || "").trim();
         if (cfg.hideTitles.some(t => text === t)) {
@@ -46,7 +51,6 @@
         }
       });
 
-      // спрятать элементы по части пути
       nav.querySelectorAll("a.md-nav__link[href]").forEach(a => {
         const href = a.getAttribute("href");
         if (href && cfg.hidePathParts.some(p => href.includes(p))) {
@@ -59,15 +63,6 @@
       });
     }
 
-    // если открыта скрытая страница — перекинуть на первую видимую
-    if (cfg && cfg.hidePathParts.some(p => location.pathname.includes(p))) {
-      const firstVisible = document.querySelector(".md-nav--primary a.md-nav__link[href]:not([aria-current])");
-      if (firstVisible && firstVisible.offsetParent !== null) {
-        location.href = firstVisible.href;
-      }
-    }
-
-    // состояние кнопок
     document.querySelectorAll(".view-toggle button").forEach(btn => {
       const active = btn.dataset.view === mode;
       btn.classList.toggle("is-active", active);
@@ -75,7 +70,6 @@
     });
   }
 
-  // ----- КНОПКИ В ШАПКЕ -----
   function injectButtons() {
     if (document.querySelector(".view-toggle")) return;
     const host = document.querySelector(".md-header__inner") || document.querySelector("header.md-header .md-header__title");
@@ -84,8 +78,8 @@
     const wrap = document.createElement("div");
     wrap.className = "view-toggle";
     wrap.innerHTML = `
-      <button type="button" class="vt-btn" data-view="standalone" aria-pressed="false" title="Показать без 'Работа в Битрикс24'">Комбинатор</button>
-      <button type="button" class="vt-btn" data-view="bitrix" aria-pressed="false" title="Показать разделы для Битрикс24">Битрикс24</button>
+      <button type="button" class="vt-btn" data-view="standalone" aria-pressed="false">Комбинатор</button>
+      <button type="button" class="vt-btn" data-view="bitrix" aria-pressed="false">Битрикс24</button>
     `;
     host.appendChild(wrap);
 
@@ -96,8 +90,7 @@
     });
   }
 
-  // ----- ПОДДЕРЖКА БЛОКОВ ONLY -----
-  // Вариант 1: HTML-комментарии: <!-- only: standalone --> ... <!-- /only -->
+  // обработка блоков only ...
   function processOnlyBlocksViaComments(scope) {
     const walker = document.createTreeWalker(scope, NodeFilter.SHOW_COMMENT, null, false);
     const starts = [];
@@ -123,53 +116,9 @@
     });
   }
 
-  // Вариант 2: Текстовые маркеры: [[only: standalone]] ... [[/only]]
-  function processOnlyBlocksViaText(scope) {
-    const START_RE = /^\s*\[\[\s*only:\s*(standalone|bitrix)\s*\]\]\s*$/i;
-    const END_RE   = /^\s*\[\[\s*\/only\s*\]\]\s*$/i;
-
-    // Берём все прямые дети основных контейнеров
-    const containers = scope.querySelectorAll("main, .md-content__inner, .md-typeset, article, section, body");
-    containers.forEach(parent => {
-      // Собираем срез childNodes, т.к. будем двигать DOM
-      const nodes = Array.from(parent.childNodes);
-      let i = 0;
-      while (i < nodes.length) {
-        const node = nodes[i];
-        if (node && node.nodeType === Node.TEXT_NODE && START_RE.test(node.textContent || "")) {
-          const mode = (node.textContent.match(START_RE)[1] || "").toLowerCase();
-          const wrapper = document.createElement("div");
-          wrapper.className = mode === "standalone" ? "only-standalone" : "only-bitrix";
-          parent.removeChild(node); // убрать стартовый маркер
-
-          // переносим узлы до END_RE
-          while (i < nodes.length) {
-            const cur = nodes[i];
-            if (!cur || !cur.parentNode) { i++; continue; }
-            if (cur.nodeType === Node.TEXT_NODE && END_RE.test(cur.textContent || "")) {
-              parent.removeChild(cur); // убрать закрывающий маркер
-              break;
-            }
-            const next = cur.nextSibling;
-            wrapper.appendChild(cur);
-            if (!next) i++; // корректировка индекса при переносе
-          }
-          // Вставить обёртку на позицию i (или в конец)
-          const ref = parent.childNodes[i] || null;
-          parent.insertBefore(wrapper, ref);
-          // Обновить срез (DOM изменился)
-          return processOnlyBlocksViaText(scope);
-        } else {
-          i++;
-        }
-      }
-    });
-  }
-
   function processOnlyBlocks(root = document) {
     const scope = root.body || root;
     processOnlyBlocksViaComments(scope);
-    processOnlyBlocksViaText(scope);
   }
 
   function applyOnlyVisibility(mode) {
@@ -178,20 +127,17 @@
     if (mode === "bitrix")     document.querySelectorAll(".only-bitrix").forEach(el => el.style.display = "");
   }
 
-  // ----- ХЕЛПЕР ГОТОВНОСТИ -----
   function onReady(fn) {
     if (document.readyState !== "loading") fn();
     else document.addEventListener("DOMContentLoaded", fn);
   }
 
-  // ----- ИНИЦИАЛИЗАЦИЯ -----
   onReady(() => {
     injectButtons();
     processOnlyBlocks(document);
     setMode(initialMode, true);
   });
 
-  // Поддержка client-side навигации (Material instant navigation)
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-md-component='container']").forEach(container => {
       container.addEventListener("DOMNodeInserted", () => {
